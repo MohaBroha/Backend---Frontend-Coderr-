@@ -173,3 +173,7 @@ h1{
         width: 100%;
     }
 }
+
+.main_footer p {
+    text-align: center;
+}
