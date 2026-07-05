@@ -11,7 +11,7 @@
 
 -   Frontend: https://coderr.mohabroha.dev
 -   API: https://coderr.mohabroha.dev/api/registration/
--   https://github.com/MohaBroha/coderr-project
+-   Git urls: https://github.com/MohaBroha/coderr-project
 
 ------------------------------------------------------------------------
 
