@@ -10,7 +10,8 @@
 # 🌍 Live Demo
 
 -   Frontend: https://coderr.mohabroha.dev
--   API: https://coderr.mohabroha.dev/api/
+-   API: https://coderr.mohabroha.dev/api/registration/
+-   https://github.com/MohaBroha/coderr-project
 
 ------------------------------------------------------------------------
 
