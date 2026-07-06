@@ -22,6 +22,9 @@ class Profile(models.Model):
     description = models.TextField(blank=True, default="")
     working_hours = models.CharField(max_length=100, blank=True, default="")
 
-    file = models.CharField(max_length=255, blank=True, default="")
-
+    file = models.ImageField(
+        upload_to="profiles/",
+        blank=True,
+        null=True,
+    )
     created_at = models.DateTimeField(auto_now_add=True)
