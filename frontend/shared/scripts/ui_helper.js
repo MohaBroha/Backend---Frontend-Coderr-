@@ -83,8 +83,8 @@ function formatDate(dateString) {
 }
 
 function getPersonImgPath(filepath) {
-    console.log("STATIC_BASE_URL:", STATIC_BASE_URL);
-    console.log("filepath:", filepath);
+    console.log("STATIC_BASE_URL =", STATIC_BASE_URL);
+    console.log("filepath =", filepath);
 
     if (!filepath) {
         return "./assets/icons/profile_pic.svg";
