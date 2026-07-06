@@ -83,29 +83,36 @@ function formatDate(dateString) {
 }
 
 function getPersonImgPath(filepath) {
-    if (filepath) {
-        if (filepath.startsWith('http')) {
-            return filepath
-        } else {
-            return STATIC_BASE_URL + filepath
-        }
-    } else {
-        return "./assets/icons/profile_pic.svg"
+    if (!filepath) {
+        return "./assets/icons/profile_pic.svg";
     }
+
+    if (filepath.startsWith("http")) {
+        return filepath;
+    }
+
+    if (filepath.startsWith("/")) {
+        return filepath;
+    }
+
+    return STATIC_BASE_URL + filepath;
 }
 
 function getOfferImgPath(filepath) {
-    if (filepath) {
-        if (filepath.startsWith('http')) {
-            return filepath
-        } else {
-            return STATIC_BASE_URL + filepath
-        }
-    } else {
-        return "./assets/img/placeholder.jpg"
+    if (!filepath) {
+        return "./assets/img/placeholder.jpg";
     }
-}
 
+    if (filepath.startsWith("http")) {
+        return filepath;
+    }
+
+    if (filepath.startsWith("/")) {
+        return filepath;
+    }
+
+    return STATIC_BASE_URL + filepath;
+}
 function showToastMessage(error = true, msg = []) {
     const toast = document.createElement('div');
     toast.className = 'toast_msg d_flex_cc_gm';
